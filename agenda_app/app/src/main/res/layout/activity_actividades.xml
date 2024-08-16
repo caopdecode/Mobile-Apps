@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividades">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightblue2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_saludo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡Agrega actividades a tu agenda!"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="Nombre de Actividad:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nomActivity"
+            android:layout_width="292dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="190px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/style_bordes_edittext"
+            android:ems="10"
+            android:hint="Ingresa el nombre de la actividad"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="Tipo de Actividad:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tipoActivity"
+            android:layout_width="292dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="190px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/style_bordes_edittext"
+            android:ems="10"
+            android:hint="Ingresa el tipo de actividad"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="Fecha Actividad"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fecha"
+            android:layout_width="292dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="190px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/style_bordes_edittext"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Ingresa la fecha de la actividad"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="Descripción Actividad"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/descActivity"
+            android:layout_width="292dp"
+            android:layout_height="98dp"
+            android:layout_marginLeft="190px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/style_bordes_edittext"
+            android:clickable="true"
+            android:ems="10"
+            android:hint="Ingresa una descripción"
+            android:inputType="text"
+            android:maxLines="10" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="5px"
+                android:layout_weight="1"
+                android:onClick="guardarActividad"
+                android:text="Guardar"
+                app:cornerRadius="10px" />
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="32px"
+                android:layout_weight="1"
+                android:onClick="buscar"
+                android:text="Buscar"
+                app:cornerRadius="10px" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Inicio"
+        android:icon="@drawable/home_icon"
+        />
+
+    <item
+        android:id="@+id/functions"
+        android:title="Funciones"
+        android:icon="@drawable/functions_icon"
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:title="Mi Perfil"
+        android:icon="@drawable/profile_icon"
+        />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Configuración"
+        android:icon="@drawable/settings_icon"
+        />
+
+</menu>
